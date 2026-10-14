@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 470" role="img" aria-label="Mascotte mouflon souriante avec foulard bleu">
+<defs><linearGradient id="fur" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#D69A62"/><stop offset="1" stop-color="#95603E"/></linearGradient><linearGradient id="horn" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#AC704C"/><stop offset="1" stop-color="#653C30"/></linearGradient></defs>
+<ellipse cx="212" cy="446" rx="124" ry="15" fill="#593622" opacity=".12"/>
+<path d="M148 310C91 338 79 412 103 423c27 12 53-20 82-40M283 313c55 27 67 100 43 111-26 12-50-21-78-40" fill="#9C6847" stroke="#754A35" stroke-width="8" stroke-linecap="round"/>
+<ellipse cx="210" cy="325" rx="118" ry="118" fill="url(#fur)" stroke="#754B35" stroke-width="7"/>
+<path d="M124 391l-10 40M289 392l12 39" stroke="#71462D" stroke-width="24" stroke-linecap="round"/>
+<path d="M134 304Q212 349 285 303L296 336Q209 373 122 335Z" fill="#328BC9" stroke="#145C99" stroke-width="6"/>
+<path d="M217 332Q252 368 242 408L205 372l-28 35q-19-48 15-74" fill="#247CB9" stroke="#145C99" stroke-width="5"/>
+<path d="M218 87c-63-90-157-30-129 51 18 49 79 46 89 12 12-40-38-64-52-33" fill="none" stroke="url(#horn)" stroke-width="46" stroke-linecap="round"/>
+<path d="M282 86c64-89 136-16 105 56-21 44-67 42-78 10-10-32 24-50 44-30" fill="none" stroke="url(#horn)" stroke-width="41" stroke-linecap="round"/>
+<path d="M111 189C85 151 66 184 87 224l36 16M306 187c26-39 48-8 25 34l-28 17" fill="#AE754F" stroke="#754B35" stroke-width="7"/>
+<ellipse cx="208" cy="194" rx="111" ry="119" fill="url(#fur)" stroke="#754B35" stroke-width="7"/>
+<ellipse cx="165" cy="188" rx="29" ry="35" fill="white"/><ellipse cx="249" cy="188" rx="29" ry="35" fill="white"/>
+<ellipse cx="174" cy="192" rx="16" ry="22" fill="#28608B"/><ellipse cx="242" cy="192" rx="16" ry="22" fill="#28608B"/>
+<ellipse cx="177" cy="192" rx="8" ry="13" fill="#182E45"/><ellipse cx="239" cy="192" rx="8" ry="13" fill="#182E45"/><circle cx="182" cy="183" r="6" fill="white"/><circle cx="245" cy="183" r="6" fill="white"/>
+<ellipse cx="206" cy="245" rx="65" ry="45" fill="#F5D7B2"/>
+<path d="M188 235q19-17 37 0-5 17-18 17-15 0-19-17" fill="#503329"/>
+<path d="M180 265q27 32 57-1" fill="none" stroke="#563427" stroke-width="8" stroke-linecap="round"/>
+<circle cx="133" cy="243" r="12" fill="#E48D7D" opacity=".65"/><circle cx="278" cy="243" r="12" fill="#E48D7D" opacity=".65"/>
+<path d="M123 332Q94 310 73 335M299 333q29-23 46 4" fill="none" stroke="#A06A49" stroke-width="21" stroke-linecap="round"/>
+</svg>
