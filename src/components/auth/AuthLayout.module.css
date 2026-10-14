@@ -1,0 +1,10 @@
+.page { min-height: 100vh; background: radial-gradient(ellipse at top right, #fff1cf, transparent 65%), var(--cream); }
+.header { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-block: 28px; }
+.back { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 800; color: var(--ink); }
+.back:hover { color: var(--orange); }
+.content { padding-block: 45px 80px; }
+
+@media (max-width: 500px) {
+  .header { flex-wrap: wrap; }
+  .content { padding-top: 25px; }
+}

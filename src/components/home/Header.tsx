@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { ArrowRight, Menu, X } from 'lucide-react';
 
 const links = [{ label: 'Les langues', href: '#langues' }, { label: 'Comment ça marche ?', href: '#comment' }, { label: 'Notre mission', href: '#mission' }];
@@ -17,11 +18,11 @@ export default function Header() {
 
       <nav className="desktop-nav" aria-label="Navigation principale">{links.map(link => <a key={link.href} href={link.href}>{link.label}</a>)}</nav>
 
-      <div className="header-actions"><a className="login-link" href="#comment">Connexion <span className="coming-soon">(bientôt)</span></a><a className="btn btn-primary header-cta" href="#langues">C’est parti ! <ArrowRight size={17} /></a><button className="mobile-toggle" onClick={() => setMobileMenu(!mobileMenu)} aria-label={mobileMenu ? 'Fermer le menu' : 'Ouvrir le menu'} aria-expanded={mobileMenu}>{mobileMenu ? <X /> : <Menu />}</button></div>
+      <div className="header-actions"><Link className="login-link" href="/connexion">Connexion</Link><a className="btn btn-primary header-cta" href="#langues">C’est parti ! <ArrowRight size={17} /></a><button className="mobile-toggle" onClick={() => setMobileMenu(!mobileMenu)} aria-label={mobileMenu ? 'Fermer le menu' : 'Ouvrir le menu'} aria-expanded={mobileMenu}>{mobileMenu ? <X /> : <Menu />}</button></div>
 
     </header>
 
-    {mobileMenu && <nav className="mobile-nav shell" aria-label="Navigation mobile">{links.map(link => <a key={link.href} href={link.href} onClick={() => setMobileMenu(false)}>{link.label}</a>)}</nav>}
+    {mobileMenu && <nav className="mobile-nav shell" aria-label="Navigation mobile">{links.map(link => <a key={link.href} href={link.href} onClick={() => setMobileMenu(false)}>{link.label}</a>)}<Link href="/connexion" onClick={() => setMobileMenu(false)}>Connexion</Link></nav>}
 </>
   );
 }

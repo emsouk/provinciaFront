@@ -1,0 +1,46 @@
+.card {
+  width: min(100%, 480px);
+  margin-inline: auto;
+  padding: 40px;
+  background: white;
+  border: 3px solid var(--ink);
+  border-radius: 30px;
+  box-shadow: 9px 10px 0 #c5e5ef;
+  text-align: center;
+}
+
+.icon {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 24px;
+  background: var(--yellow);
+  border: 2px solid var(--ink);
+  border-radius: 20px;
+  transform: rotate(-7deg);
+}
+
+.title { margin: 16px 0 12px; font-size: 44px; font-weight: 1000; }
+.intro { color: #677382; line-height: 1.65; }
+.form { display: grid; gap: 22px; margin-top: 30px; text-align: left; }
+.field { display: grid; gap: 8px; }
+.field label { font-size: 14px; font-weight: 800; }
+.inputWrapper { display: flex; align-items: center; gap: 12px; padding: 0 14px; border: 2px solid #d8dde3; border-radius: 14px; color: #677382; }
+.inputWrapper:focus-within { border-color: var(--blue); outline: 2px solid var(--blue); outline-offset: 3px; }
+.inputWrapper > svg { flex-shrink: 0; }
+.inputWrapper input { width: 100%; min-width: 0; padding: 15px 0; border: 0; background: transparent; color: var(--ink); font: inherit; outline: none; }
+.passwordToggle { display: grid; place-items: center; flex-shrink: 0; min-width: 44px; min-height: 44px; border: 0; border-radius: 10px; background: transparent; color: var(--ink); }
+.passwordToggle:hover { background: #f5eedf; }
+.submit { width: 100%; margin-top: 4px; }
+.status { margin: 0; color: #677382; font-size: 13px; line-height: 1.6; text-align: center; }
+.status:empty { display: none; }
+.note { margin: 26px 0 0; font-size: 13px; color: #677382; }
+
+@media (max-width: 500px) {
+  .card { padding: 30px 22px; }
+  .title { font-size: 38px; }
+}
+
+.link { color: #b94728; font-weight: 800; text-decoration: underline; text-underline-offset: 3px; }
+.link:hover { color: var(--ink); }
