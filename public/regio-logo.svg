@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">Regio</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6B1FAD"/>
+      <stop offset="1" stop-color="#3A1A78"/>
+    </linearGradient>
+    <clipPath id="icon"><rect x="16" y="16" width="480" height="480" rx="112"/></clipPath>
+  </defs>
+  <g clip-path="url(#icon)">
+    <rect x="16" y="16" width="480" height="480" fill="url(#bg)"/>
+    <path d="M0 0 H300 C340 50 270 105 185 140 C110 172 60 205 0 280 Z" fill="#FFD21F"/>
+    <path d="M512 512 H240 C320 490 370 450 430 425 C470 408 495 385 512 345 Z" fill="#8655B8"/>
+  </g>
+  <text x="66" y="317" font-family="Poppins, Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="130" font-weight="800" fill="#FBF8F2" textLength="382" lengthAdjust="spacingAndGlyphs">Regıo</text>
+  <circle cx="344" cy="212" r="12" fill="#FFD21F"/>
+</svg>

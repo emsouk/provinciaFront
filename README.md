@@ -1,4 +1,4 @@
-# PROVINCIA — Landing page
+# REGIO — Landing page
 
 Template Next.js (App Router) + TypeScript + Tailwind CSS 4 + daisyUI 5.
 
@@ -15,7 +15,7 @@ Ouvre http://localhost:3000.
 - Page d'accueil responsive avec navigation ancrée, menu mobile
 - Deux cartes de langues et modale « bientôt disponible »
 - Mini-exercice de démonstration interactif (réponse correcte : Bonghjornu)
-- Design system daisyUI `provincia`
+- Design system daisyUI `business`
 
 Il s'agit d'une landing page uniquement : aucun compte ni API Symfony n'est intégré. Les parcours et réseaux sociaux ne sont pas encore disponibles.
 
