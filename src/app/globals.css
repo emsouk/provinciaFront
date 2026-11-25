@@ -49,4 +49,52 @@ h1 { margin: 25px 0; font-size: clamp(55px, 5.45vw, 86px); font-weight: 1000; li
   --yellow: #ffd21f;
 }
 .brand-logo { width: 52px; height: 52px; object-fit: contain; }
-)^pà
+.auth-page { min-height: 100vh; display: grid; grid-template-columns: minmax(320px, .9fr) 1.1fr; background: var(--cream); color: var(--ink); }
+.auth-brand-panel { position: relative; isolation: isolate; overflow: hidden; min-height: 100vh; padding: 54px clamp(36px, 7vw, 100px); display: flex; flex-direction: column; justify-content: space-between; color: #fff; background: #3a1a78; }
+.auth-logo { display: inline-flex; width: fit-content; }
+.auth-logo img { display: block; object-fit: contain; }
+.auth-brand-copy { position: relative; z-index: 1; max-width: 550px; margin-block: auto; padding-block: 70px; }
+.auth-kicker { display: inline-block; color: var(--orange); font-size: 11px; font-weight: 900; letter-spacing: .14em; }
+.auth-brand-copy .auth-kicker { color: var(--yellow); }
+.auth-brand-copy h1 { margin: 20px 0; font-size: 56px; line-height: 1.1; letter-spacing: -.04em; }
+.auth-brand-copy p { max-width: 390px; color: #e8def2; font-size: 16px; line-height: 1.7; }
+.auth-panel-mark { position: absolute; z-index: -1; right: 36px; bottom: 35px; color: #8655b8; font-size: 170px; line-height: 1; }
+.auth-content { min-height: 100vh; padding: 32px clamp(24px, 6vw, 88px); display: flex; flex-direction: column; }
+.auth-back { display: inline-flex; align-items: center; gap: 9px; width: fit-content; color: #6b7280; font-size: 13px; font-weight: 700; }
+.auth-back:hover { color: var(--orange); }
+.auth-form-wrap { width: min(100%, 430px); margin: auto; padding-block: 54px; }
+.auth-form-wrap h2 { margin: 12px 0 8px; font-size: 38px; line-height: 1.15; }
+.auth-intro { margin-bottom: 32px; color: #667085; line-height: 1.6; }
+.auth-form { display: grid; gap: 11px; }
+.auth-form label { margin-top: 9px; color: var(--ink); font-size: 13px; font-weight: 800; }
+.auth-form input { width: 100%; min-height: 50px; border: 1px solid #d5d4db; border-radius: 9px; padding: 0 14px; background: #fff; color: var(--ink); font: inherit; }
+.auth-form input:focus { outline: 3px solid #8655b833; border-color: var(--blue); }
+.auth-password-label { display: flex; align-items: center; justify-content: space-between; }
+.auth-password-field { position: relative; }
+.auth-password-field input { padding-right: 52px; }
+.auth-password-toggle { position: absolute; inset: 0 5px 0 auto; display: grid; place-items: center; width: 42px; border: 0; background: transparent; color: #687083; }
+.auth-submit { width: 100%; margin-top: 18px; }
+.auth-feedback { min-height: 42px; margin: 0; color: #8a3800; font-size: 13px; line-height: 1.5; }
+.auth-signup { margin-top: 25px; color: #667085; font-size: 13px; text-align: center; }
+.auth-signup span { color: var(--orange); font-weight: 800; }
+.auth-demo-note { margin: -14px 0 22px; color: #626879; font-size: 12px; line-height: 1.5; }
+.auth-mode-switch { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; margin: 22px 0 24px; padding: 4px; border: 1px solid #e4e0ea; border-radius: 9px; background: #f1edf5; }
+.auth-mode-switch button { min-height: 40px; border: 0; border-radius: 6px; background: transparent; color: #626879; font: inherit; font-size: 13px; font-weight: 800; }
+.auth-mode-switch button.active { background: #fff; color: var(--ink); box-shadow: 0 1px 4px #34214a1c; }
+.auth-mode-switch button:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+.auth-form-wrap > .auth-mode-switch + h2 { margin-top: 0; }
+.auth-session { padding-top: 22px; }
+.auth-session-badge { display: inline-block; padding: 8px 11px; border-radius: 6px; background: #fff0c2; color: #604400; font-size: 10px; font-weight: 900; letter-spacing: .1em; }
+.auth-session h2 { margin-top: 19px; }
+.auth-session p { margin-block: 12px 28px; color: #626879; line-height: 1.65; }
+@media(max-width: 760px) {
+  .auth-page { grid-template-columns: 1fr; }
+  .auth-brand-panel { min-height: auto; padding: 24px; }
+  .auth-brand-copy { padding-block: 44px 20px; }
+  .auth-brand-copy h1 { font-size: 40px; }
+  .auth-brand-copy p { margin-bottom: 0; font-size: 14px; }
+  .auth-panel-mark { right: 12px; bottom: 8px; font-size: 92px; }
+  .auth-content { min-height: 58vh; padding: 24px; }
+  .auth-form-wrap { padding-block: 42px; }
+  .auth-form-wrap h2 { font-size: 32px; }
+}

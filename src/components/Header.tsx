@@ -23,7 +23,7 @@ export default function Header() {
           {links.map((link) => <a key={link.href} href={link.href}>{link.label}</a>)}
         </nav>
         <div className="header-actions">
-          <a className="login-link" href="#comment">Connexion <span className="coming-soon">(bientôt)</span></a>
+          <a className="login-link" href="/login">Connexion</a>
           <a className="btn btn-primary header-cta" href="#langues">C’est parti ! <ArrowRight size={17}/></a>
           <button className="mobile-toggle" onClick={() => setMobileMenu(!mobileMenu)} aria-label={mobileMenu ? 'Fermer le menu' : 'Ouvrir le menu'} aria-expanded={mobileMenu}>
             {mobileMenu ? <X/> : <Menu/>}
@@ -33,6 +33,7 @@ export default function Header() {
       {mobileMenu && (
         <nav className="mobile-nav shell" aria-label="Navigation mobile">
           {links.map((link) => <a key={link.href} href={link.href} onClick={() => setMobileMenu(false)}>{link.label}</a>)}
+          <a href="/login" onClick={() => setMobileMenu(false)}>Connexion</a>
         </nav>
       )}
     </>
